@@ -62,9 +62,6 @@ class Carousel extends HTMLElement {
                 this.currentSlide++;
                 this.setSlidePos(this.currentSlide);
             } else {
-                console.log({
-                    "slide": this.currentSlide
-                });
                 this.removeAnimation();
                 this.currentSlide = this.currentSlide - this.items.length;
                 this.setSlidePos(this.currentSlide);
