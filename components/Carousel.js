@@ -57,16 +57,22 @@ class Carousel extends HTMLElement {
 
     start() {
         this.timer = setInterval(() => {
-            if (this.currentSlide < this.itemsInView.length - 2) {
+            if (this.currentSlide < this.itemsInView.length - 1) {
                 this.addAnimation();
                 this.currentSlide++;
                 this.setSlidePos(this.currentSlide);
             } else {
+                console.log({
+                    "slide": this.currentSlide
+                });
                 this.removeAnimation();
                 this.currentSlide = this.currentSlide - this.items.length;
                 this.setSlidePos(this.currentSlide);
-                this.addAnimation();
-                this.setSlidePos(++this.currentSlide);
+                setTimeout(() => {
+                    this.addAnimation();
+                    this.setSlidePos(++this.currentSlide); 
+                }, 0);
+                
             }
         }, this.delay);
     }
