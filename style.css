@@ -1,0 +1,63 @@
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.cta-button-with-image {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin: 10px;
+}
+
+.cta-button-with-image img, .carousel-container .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.cta-button-with-image button {
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    right: 5px;
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.transition {
+    transition: all 2s;
+}
+
+.carousel-container .carousel-slide .carousel-content {
+    position: relative;
+    z-index: 2;
+}
+
