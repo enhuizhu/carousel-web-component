@@ -60,12 +60,14 @@ class Carousel extends HTMLElement {
             if (this.currentSlide < this.itemsInView.length - 2) {
                 this.addAnimation();
                 this.currentSlide++;
+                this.setSlidePos(this.currentSlide);
             } else {
                 this.removeAnimation();
                 this.currentSlide = this.currentSlide - this.items.length;
+                this.setSlidePos(this.currentSlide);
+                this.addAnimation();
+                this.setSlidePos(++this.currentSlide);
             }
-
-            this.setSlidePos(this.currentSlide);
         }, this.delay);
     }
 

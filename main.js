@@ -18,6 +18,24 @@ const initHeaderCarousel = () => {
             heading: 'heading3',
             ctaText: 'button3',
             id: 'carousel3'
+        },
+        {
+            image: './images/marcus-loke-xXJ6utyoSw0-unsplash.jpg',
+            heading: 'heading4',
+            ctaText: 'button4',
+            id: 'carousel4'
+        },
+        {
+            image: './images/sarah-dorweiler-fr0J5-GIVyg-unsplash.jpg',
+            heading: 'heading5',
+            ctaText: 'button5',
+            id: 'carousel5'
+        },
+        {
+            image: './images/tamara-bellis-pONwcn4IcVU-unsplash.jpg',
+            heading: 'heading6',
+            ctaText: 'button6',
+            id: 'carousel6'
         }
     ]
 
